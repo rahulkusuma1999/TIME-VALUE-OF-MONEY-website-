@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+ .hero-image {
+          background-image: url("pic3.jfif");
+
+          height: 610px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+        }
+
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+
+        li {
+          float: left;
+        }
+
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding:14px;
+          text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+          background-color: #111;
+        }
+
+        .active {
+          background-color: #4CAF50;
+        }
+        form {
+        margin-left: 150px;
+		}
+		#mydiv {
+		    
+		 	background-color: rgba(0,0,0, 0.4);*/ /* Black w/opacity/see-through */
+		  	color: white;
+		  	font-weight: bold;
+		  	border: 3px solid #f1f1f1;
+		  	position: absolute;
+		  	top: 50%;
+		  	left: 50%;
+		  	transform: translate(-50%, -50%); /*to center box*/
+		  	z-index: 2;
+		  	width: 60%;
+		  	padding: 20px;
+		  	text-align: center;
+		}
+</style>
+</head>
+<body>
+        <div class="hero-image"> 
+        <ul style="margin-top: -8px" style="font-size:18px";>
+          <b>
+            <li style="margin-left: 500px"; ><a href="base.html">Home</a></li>
+            <li ><a href="inflation2.html">Inflation</a></li>
+            <li ><a href="">About</a></li>
+            <li ><a href="">Contact</a></li>
+            </b>
+        </ul>
+        </b>
+            <h1 style="text-align:center;">welcome</h1>	
+            <br>
+            <div style="left:50px"; id="mydiv">
+		<form method="get" action="main">
+      <br>
+      <b>
+      <h1> Enter You'r Details</h1>
+			&nbsp &nbsp Current Value &nbsp <input type="text" name="current_val"
+			placeholder="in rupees">
+      <br>
+      <br>
+			 How Many Year &nbsp <input type="text" name="years" placeholder="in numbers">
+      <br>
+      <br>
+			&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+      <input type="reset" name="reset">
+      &nbsp &nbsp &nbsp
+      <input type="submit" name="submit" value="Submit">
+      </b>
+		</form>
+  </div>
+        </div>
+
+</body>
+</html>

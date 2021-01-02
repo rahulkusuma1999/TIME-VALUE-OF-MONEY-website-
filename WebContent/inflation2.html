@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+        .hero-image {
+          background-image: url("pic6.jfif");
+
+          height: 610px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+         
+        }
+
+        ul {
+          list-style-type: none;
+          
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+
+        li {
+          float: left;
+        }
+
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding:14px;
+          text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+          background-color: #111;
+        }
+
+        .active {
+          background-color: #4CAF50;
+        }
+        form {
+        margin-left: 90px;
+        margin-top:30px;
+		}
+		#mydiv {
+		    
+		 	background-color: rgba(0,0,0, 0.4);*/ /* Black w/opacity/see-through */
+		  	color: white;
+		  	font-weight: bold;
+		  	border: 3px solid #f1f1f1;
+		  	position: absolute;
+		  	top: 50%;
+		  	left: 50%;
+		  	transform: translate(-50%, -50%); /*to center box*/
+		  	z-index: 2;
+		  	width: 50%;
+		  	padding: 20px;
+		  	text-align: center;
+		  	margin-top:60px;
+		}
+		h2{
+		color:white;
+		   font-display: auto;
+      }
+		
+		
+		}
+
+</style>
+</head>
+<body style="background-color:grey">
+ <div class="hero-image"> 
+        <ul style="margin-top: -8px" style="font-size:18px";>
+         	<b>
+          	 <li style="margin-left: 500px"; ><a href="base.html">Home</a></li>
+             <li ><a href="tvm.html">Future value</a></li>
+             <li ><a href="">About</a></li>
+             <li ><a href="">Contact</a></li>
+            </b>
+        </ul>
+    	<h1 style="text-align:center">FUTURE VALUE</h1>	
+    	
+    	
+        <br>
+    	<div  id="mydiv">
+			<form style="color: white" ; method="get" action="inflationrate">
+				<h1> INFLATION RATE</h1>
+				CPI  of Previous Year &nbsp <input type="text" name="cpi_previousyear"
+				placeholder="">
+				<br>
+				<br>
+				CPI  of This Year &nbsp &nbsp &nbsp &nbsp <input type="text" name="cpi_thisyear" placeholder="">
+				<br>
+				<br>
+				 &nbsp &nbsp &nbsp <input type="reset" name="reset"> &nbsp &nbsp &nbsp &nbsp 
+				<input type="submit" name="submit" value="submit">
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
